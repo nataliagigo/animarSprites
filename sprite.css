@@ -1,0 +1,39 @@
+.personaje{
+    width: 300px;
+    height: 430px;
+    margin: 0 auto;
+    background: url("/img/correr.png");
+    position: absolute;
+    left: 30%;
+    bottom: 0px;
+    /*background-position: -300px 0;*/
+    animation: correr 1s steps(5) infinite;
+}
+
+.fondo{
+    height: 550px;
+    width: 860px;
+    background: url("/img/paisaje.jpg");
+    position:relative;
+    animation: animarFondo 3s linear infinite;
+}
+
+@keyframes correr{
+    0%{
+        background-position: 0px ;
+
+    }
+    100%{
+        background-position: 1595px;
+    }
+}
+
+@keyframes animarFondo {
+    0%{
+        background-position: 0px ;
+
+    }
+    100%{
+        background-position: -860px;
+    }
+}
